@@ -1,12 +1,3 @@
-# TASK 1: Leap Year Checker
-# Goal: Translate layered real-world rules into nested/chained conditions
-#
-# Gregorian Rules:
-#   1. Divisible by 4       → leap year
-#   2. EXCEPT divisible by 100  → NOT a leap year
-#   3. UNLESS divisible by 400  → IS a leap year
-# Also: Reject zero and negative years with a clear message.
-
 def is_leap_year(year):
     # Reject impossible input
     if year <= 0:
@@ -34,10 +25,6 @@ if result is True:
     print(f"{year} IS a leap year.")
 elif result is False:
     print(f"{year} is NOT a leap year.")
-
-# -------------------------------------------------------------------
-# THREE MEANINGFUL TEST CASES (chosen to convince a skeptical classmate)
-# -------------------------------------------------------------------
 print("\n--- Test Cases ---")
 
 # Test 1: 2024 — Basic rule: divisible by 4, not a century year → LEAP
